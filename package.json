@@ -2,7 +2,7 @@
   "name": "foodie2foodie",
   "version": "1.0.0",
   "description": "Foodie network",
-  "main": "index.html",
+  "main": "js/index.js",
   "scripts": {
     "test": "mocha",
     "mkdir": "mkdir -p build",
