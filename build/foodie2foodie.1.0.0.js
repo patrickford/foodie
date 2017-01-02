@@ -44,9 +44,9 @@
 /* 0 */
 /***/ function(module, exports) {
 
+	// Foodie2Foodie
 	"use strict";
 	
-	// Foodie2Foodie
 	console.log("loaded...");
 
 /***/ }
