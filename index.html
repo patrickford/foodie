@@ -1,14 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="foodie">
   <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="stylesheet" href="foodie2foodie.1.0.0.min.css">
+    <script src="jquery.min.js"></script>
+    <script src="angular.min.js"></script>    
+    <script src="bootstrap.min.js"></script>
     <script src="foodie2foodie.1.0.0.js"></script>
     <title>Foodie2Foodie</title>
   </head>
-  <body>
+  <body class="container-fluid">
     <h1>Foodie2Foodie</h1>
-    <h2>A great place to discuss food</h2>
-    <div ng-view></div>
+    <div ng-controller="mainCtrl">
+      <div ng-view>{{ welcome }}</div>
+    </div>
   </body>
 </html>
