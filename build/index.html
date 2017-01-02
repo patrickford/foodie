@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="foodie">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="foodie2foodie.1.0.0.min.css">
+    <script src="jquery.min.js"></script>
+    <script src="angular.min.js"></script>    
+    <script src="bootstrap.min.js"></script>
+    <script src="foodie2foodie.1.0.0.js"></script>
+    <title>Foodie2Foodie</title>
+  </head>
+  <body class="container-fluid">
+    <h1>Foodie2Foodie</h1>
+    <div ng-controller="mainCtrl">
+      <div ng-view>{{ welcome }}</div>
+    </div>
+  </body>
+</html>
