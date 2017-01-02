@@ -1,0 +1,9 @@
+language: node_js
+node_js: node
+deploy:
+  provider: heroku
+  api_key:
+    secure: CUhoe6QPA2uxliRA/7q7IOR4ULXCxXlZkbxl4YNR83W4ybRf59wRB4ll3WOyY2k8TELGA+qk4ij/ppu5GQPslJdF3Yc50txCqtzQRW7/H7yb6IXWTrX5yclGQTksMh6Ms5y6DQJE0gLLFTWu6JhpG99W9CErJPYjOaqF9uveu9AIrHkT/3aiU03TV42MKy+qAPze5I7DY1wCnEdrlBWz6KIA58osHzJ+c74+64rm1pagd+61u4vjdppM4T06ImcjGeB7GbFUP0NoPdjIar0NZGnxjXF+ib23Eu/h+R0HUA7eoYkIT8wd1/lkCO3PVpWcMmejC818aUR8QXOLB6ybCeh0LKJQZQkbYekEU4zHoV8N0A44Zc3B/R8VwYVCiPMnWICS4QO/yxdA4MTbDW7txPS0HMp4NSgUw6heogr1qfOEr43c+GHNS9wOrxZiTwldc2kbrhpISUSOTaFpsioLfm+vRX/qVJy9ZorjZVhtllxkl4FeEbzJ3lQ5+9OC5NbbZGlZdpBoGae8fRd1hq3HQ75dgQKULpcXRJCFh2KEN7uaw+H0Vwzlwdh6QfXmpv5PfScF7SqYAsmP4wuRfYTBJMJ7bjT+9kfFfZYwPlqJnHyT+/IhcrAWEXz1Tea7H/R/4ybJJrzNCTuHP8TMxceCIm9a53umcIY8Emkzi8+guwM=
+  app: lit-basin-58032
+  on:
+    repo: patrickford/foodie
