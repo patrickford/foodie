@@ -9,7 +9,7 @@
     "clean": "rm -rf build",
     "clean:html": "rm -f build/index.html",
     "clean:bootstrap": "rm -f build/bootstrap.min.css",
-    "copy:lib": "cp node_modules/jquery/dist/jquery.min.js build && cp node_modules/angular/angular.min.js",
+    "copy:lib": "cp node_modules/jquery/dist/jquery.min.js build && cp node_modules/angular/angular.min.js build",
     "copy:bootstrap": "cp node_modules/bootstrap/dist/css/bootstrap.min.css build/ && cp node_modules/bootstrap/dist/js/bootstrap.min.js build/",
     "build:bootstrap": "cd node_modules/bootstrap/ && grunt dist && cd ../.. && npm run copy:bootstrap",
     "build:css": "npm run build:css:unminified && npm run build:css:minified",
@@ -33,7 +33,7 @@
     "watch:js:minified": "npm run build:js:minified && webpack --watch --minify",
     "clean:js:minified": "rm -f build/$npm_package_name.$npm_package_version.min.js build/$npm_package_name.$npm_package_version.min.js.map",
     "watch": "npm run watch:html & npm run watch:css & npm run watch:js",
-    "build": "npm run clean && npm run mkdir && npm run build:html && npm run build:bootstrap && npm run build:css && npm run build:js"
+    "build": "npm run clean && npm run mkdir && npm run build:html && npm run build:bootstrap && npm run copy:lib && npm run build:css && npm run build:js"
   },
   "author": "Patrick Ford",
   "license": "ISC",
