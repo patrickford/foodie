@@ -1,11 +1,35 @@
 "use strict";
 
-var express = require('express');
-var app = express();
+const express = require('express');
+const app = express();
 app.use(express.static('build'));
+
+let users = [];
+
+
+app.get("/users", (req, res) => {
+  res.status(200).json(users);
+});
+
+app.put("/users/:name", (req, res) => {
+  users.push(req.params.name);
+  res.status(201).json(users);
+});
+
+app.delete("users/:name", (req, res) => {
+  console.log('hit delete end point');
+  if (users.indexOf(req.params.name) !== -1) {
+    let deleted = users.splice(users.indexOf(req.params.name), 1);
+    res.status(200).json(deleted);
+  } else {
+    res.status(400).send("User not found");
+  }
+});
+
 
 app.listen(process.env.PORT || 8080, function() {
   console.log('Server running @ localhost:8080');
 });
 
 exports.app = app;
+
