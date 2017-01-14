@@ -14,6 +14,13 @@
     <h1>Foodie2Foodie</h1>
     <h2>Where foodies meet!</h2>
     <div ng-controller="mainCtrl">
+      <form id="register">
+        <label for="username">Username</label>
+        <input type="text" id="username">
+        <label for="password">Password</label>
+        <input type="password" id="password">
+        <button type="submit">Submit</button>
+      </form>
       <div ng-view>{{ welcome }}</div>
     </div>
   </body>
