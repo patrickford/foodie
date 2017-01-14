@@ -11,7 +11,7 @@ app.get("/users", (req, res) => {
   res.status(200).json(users);
 });
 
-app.put("/users/:name", (req, res) => {
+app.post("/users/:name", (req, res) => {
   users.push(req.params.name);
   res.status(201).json(users);
 });
