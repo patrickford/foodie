@@ -6,7 +6,6 @@ app.use(express.static('build'));
 
 let users = [];
 
-
 app.get("/users", (req, res) => {
   res.status(200).json(users);
 });
