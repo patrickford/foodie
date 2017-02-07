@@ -11,7 +11,7 @@ var app = server.app;
 chai.use(chaiHttp);
 
 describe('Server', function() {
-  it('should respond with code 200 on root GET request', function(done) {
+  it('should respond with status code 200 on root GET request', function(done) {
     chai.request(app)
         .get('/')
         .end(function(err, res) {
