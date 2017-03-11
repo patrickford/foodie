@@ -27,7 +27,7 @@ app.delete("users/:name", (req, res) => {
   }
 });
 
-// launch server
+// launch server and start app
 app.listen(process.env.PORT || 8080, function() {
   console.log('Server now running @ localhost:8080');
 });
